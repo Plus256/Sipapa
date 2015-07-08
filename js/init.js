@@ -126,10 +126,10 @@ function fetchShule(){
 					l_id=data[c].id;
 					var shule=_("div");
 					shule.setAttribute("class", "shule");
-					
+
 					var shule_spacer=_("div");
 					shule_spacer.setAttribute("class", "spacer");
-					
+
 					var shule_cover=_("div");
 					shule_cover.setAttribute("class", "shule_cover");
 					var img=_("img");
@@ -139,10 +139,10 @@ function fetchShule(){
 					shule_cover_link.href="shule.php?id="+data[c].id+"";
 					shule_cover_link.appendChild(shule_cover);
 					shule.appendChild(shule_cover_link);
-					
+
 					var shule_details=_("div");
 					shule_details.setAttribute("class", "shule_details");
-					
+
 					var shule_title=_("div");
 					shule_title.setAttribute("class", "shule_title");
 					shule_title.innerHTML=data[c].title;
@@ -150,38 +150,38 @@ function fetchShule(){
 					shule_link.href="shule.php?id="+data[c].id+"";
 					shule_link.appendChild(shule_title);
 					shule_details.appendChild(shule_link);
-					
+
 					var shule_pub_det=_("div");
 					shule_pub_det.setAttribute("class", "shule_pub_det");
-					
+
 					var shule_author=_("div");
 					shule_author.setAttribute("class", "shule_author");
 					shule_author.innerHTML="By "+data[c].author;
-					
+
 					var shule_published=_("div");
 					shule_published.setAttribute("class", "shule_published");
 					shule_published.innerHTML=data[c].published;
-					
+
 					var shule_category=_("div");
 					shule_category.setAttribute("class", "shule_category");
 					shule_category.innerHTML=data[c].category;
 					var shule_category_link=_("a");
 					shule_category_link.href="./?cat="+data[c].category+"";
 					shule_category_link.appendChild(shule_category);
-					
+
 					shule_pub_det.appendChild(shule_author);
 					shule_pub_det.appendChild(shule_published);
 					shule_pub_det.appendChild(shule_category_link);
 					shule_details.appendChild(shule_pub_det);
-					
+
 					var shule_body=_("div");
 					shule_body.setAttribute("class", "shule_body");
 					shule_body.innerHTML=data[c].intro;
 					shule_details.appendChild(shule_body);
-					
+
 					shule.appendChild(shule_details);
 					shule.appendChild(shule_spacer);
-					
+
 					switch(j){
 						case 0:
 						$("shule_left_left_container").appendChild(shule);
@@ -190,7 +190,7 @@ function fetchShule(){
 						$("shule_left_right_container").appendChild(shule);
 						break;
 					}
-					
+
 					c++;
 					if(c==(data.length)){
 						break;
@@ -225,7 +225,7 @@ function topShule(){
 				for(var i in data){
 					var shule_container=_("div");
 					shule_container.setAttribute("id", "shule_container");
-					
+
 					var shule_cover=_("div");
 					shule_cover.setAttribute("class", "dash_cover");
 					var img=_("img");
@@ -235,10 +235,10 @@ function topShule(){
 					shule_cover_link.href="shule.php?id="+data[i].id+"";
 					shule_cover_link.appendChild(shule_cover);
 					$("dashboard").appendChild(shule_cover_link);
-					
+
 					var shule_tit_cat=_("div");
 					shule_tit_cat.setAttribute("id", "shule_tit_cat");
-					
+
 					var shule_category=_("div");
 					shule_category.setAttribute("id", "shule_container_category");
 					shule_category.innerHTML=data[i].category;
@@ -246,7 +246,7 @@ function topShule(){
 					shule_category_link.href="./?cat="+data[i].category+"";
 					shule_category_link.appendChild(shule_category);
 					shule_tit_cat.appendChild(shule_category_link);
-					
+
 					var shule_title=_("div");
 					shule_title.setAttribute("id", "shule_container_title");
 					shule_title.innerHTML=data[i].title;
@@ -254,16 +254,16 @@ function topShule(){
 					shule_link.href="shule.php?id="+data[i].id+"";
 					shule_link.appendChild(shule_title);
 					shule_tit_cat.appendChild(shule_link);
-					
+
 					var shule_author=_("div");
 					shule_author.setAttribute("class", "shule_author");
 					shule_author.innerHTML="By "+data[i].author;
 					//shule_tit_cat.appendChild(shule_author);
-					
+
 					var shule_body=_("div");
 					shule_body.setAttribute("id", "shule_container_body");
 					shule_body.innerHTML=data[i].intro;
-					
+
 					shule_container.appendChild(shule_tit_cat);
 					shule_container.appendChild(shule_body);
 				}
@@ -300,49 +300,49 @@ function moreShule(id){
 			data=JSON.parse(data);
 			var shule=_("div");
 			shule.setAttribute("class", "shule");
-			
+
 			var shule_title=_("div");
 			shule_title.setAttribute("class", "shule_title");
 			shule_title.innerHTML=data.title;
 			shule.appendChild(shule_title);
-			
+
 			var shule_pub_det=_("div");
 			shule_pub_det.setAttribute("class", "shule_pub_det");
-			
+
 			var shule_author=_("div");
 			shule_author.setAttribute("class", "shule_author");
 			shule_author.innerHTML="By "+data.author;
-			
+
 			var shule_published=_("div");
 			shule_published.setAttribute("class", "shule_published");
 			shule_published.innerHTML=data.published;
-			
+
 			var shule_category=_("div");
 			shule_category.setAttribute("class", "shule_category");
 			shule_category.innerHTML=data.category;
 			var shule_category_link=_("a");
 			shule_category_link.href="./?cat="+data.category+"";
 			shule_category_link.appendChild(shule_category);
-			
+
 			shule_pub_det.appendChild(shule_author);
 			shule_pub_det.appendChild(shule_published);
 			shule_pub_det.appendChild(shule_category_link);
 			shule.appendChild(shule_pub_det);
-			
+
 			var fb_share=_("img");
-			fb_share.src="../gra/facebook.png";
-			
+			fb_share.src="./gra/facebook.png";
+
 			//var twt_share=_("a");
 			//twt_share.href="https://twitter.com/share";
 			//twt_share.setAttribute("target", "_blank");
 			var twt_share=_("img");
-			twt_share.src="../gra/twitter.png";
+			twt_share.src="./gra/twitter.png";
 			twt_share.addEventListener("click",function(){
 				window.open("https://twitter.com/share?text="+data.title+"&url="+escape(window.location.href), "", "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600");
 			},false);
-			
+
 			var gp_share=_("img");
-			gp_share.src="../gra/google.png";
+			gp_share.src="./gra/google.png";
 			gp_share.addEventListener("click",function(){
 				window.open("https://plus.google.com/share?url="+escape(window.location.href), "", "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600");
 			},false);
@@ -364,36 +364,36 @@ function moreShule(id){
 				window.open("https://www.facebook.com/sharer/sharer.php?s=100&u="+escape(window.location.href)+"&t="+data.title, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
 				//window.open("https://www.facebook.com/sharer/sharer.php?s=100&p[title]="+document.title+"&p[summary]=EXAMPLE&p[url]="+escape(window.location.href)+"&p[images][0]=EXAMPLE&u="+escape(window.location.href)+"&t="+document.title+"");
 			}, false);
-			
+
 			var social_spacer=_("div");
 			social_spacer.setAttribute("class", "spacer");
-			
+
 			var views=_("div");
 			views.setAttribute("class", "views");
 			views.innerHTML=data.views+" Views";
-			
+
 			var social=_("div");
 			social.setAttribute("class", "social");
-			
+
 			social.appendChild(fb_share);
 			social.appendChild(twt_share);
 			social.appendChild(gp_share);
 			social.appendChild(views);
 			social.appendChild(social_spacer);
 			shule.appendChild(social);
-			
+
 			var shule_cover=_("div");
 			shule_cover.setAttribute("class", "dash_cover");
 			var img=_("img");
 			img.src="img/"+data.cover;
 			shule_cover.appendChild(img);
 			shule.appendChild(shule_cover);
-			
+
 			var shule_body=_("div");
 			shule_body.setAttribute("class", "shule_body");
 			shule_body.innerHTML=data.intro;
 			shule.appendChild(shule_body);
-			
+
 			$("more_shule_left_this").appendChild(shule);
 		}
 	}
@@ -422,10 +422,10 @@ function fillRight(id){
 				for(var j=0; j<2; j++){
 					var shule=_("div");
 					shule.setAttribute("class", "shule");
-					
+
 					var shule_spacer=_("div");
 					shule_spacer.setAttribute("class", "spacer");
-					
+
 					var shule_cover=_("div");
 					shule_cover.setAttribute("class", "shule_cover");
 					var img=_("img");
@@ -435,10 +435,10 @@ function fillRight(id){
 					shule_cover_link.href="shule.php?id="+data[c].id+"";
 					shule_cover_link.appendChild(shule_cover);
 					shule.appendChild(shule_cover_link);
-					
+
 					var shule_details=_("div");
 					shule_details.setAttribute("class", "shule_details");
-					
+
 					var shule_title=_("div");
 					shule_title.setAttribute("class", "shule_title");
 					shule_title.innerHTML=data[c].title;
@@ -446,38 +446,38 @@ function fillRight(id){
 					shule_link.href="shule.php?id="+data[c].id+"";
 					shule_link.appendChild(shule_title);
 					shule_details.appendChild(shule_link);
-					
+
 					var shule_pub_det=_("div");
 					shule_pub_det.setAttribute("class", "shule_pub_det");
-					
+
 					var shule_author=_("div");
 					shule_author.setAttribute("class", "shule_author");
 					shule_author.innerHTML="By "+data[c].author;
-					
+
 					var shule_published=_("div");
 					shule_published.setAttribute("class", "shule_published");
 					shule_published.innerHTML=data[c].published;
-					
+
 					var shule_category=_("div");
 					shule_category.setAttribute("class", "shule_category");
 					shule_category.innerHTML=data[c].category;
 					var shule_category_link=_("a");
 					shule_category_link.href="./?cat="+data[c].category+"";
 					shule_category_link.appendChild(shule_category);
-					
+
 					shule_pub_det.appendChild(shule_author);
 					shule_pub_det.appendChild(shule_published);
 					shule_pub_det.appendChild(shule_category_link);
 					shule_details.appendChild(shule_pub_det);
-					
+
 					var shule_body=_("div");
 					shule_body.setAttribute("class", "shule_body");
 					shule_body.innerHTML=data[c].intro;
 					shule_details.appendChild(shule_body);
-					
+
 					shule.appendChild(shule_details);
 					shule.appendChild(shule_spacer);
-					
+
 					switch(j){
 						case 0:
 						$("shule_left_left_container").appendChild(shule);
@@ -486,7 +486,7 @@ function fillRight(id){
 						$("shule_left_right_container").appendChild(shule);
 						break;
 					}
-					
+
 					c++;
 					if(c==(data.length)){
 						break;
@@ -521,10 +521,10 @@ function catShule(cat){
 				for(var j=0; j<2; j++){
 					var shule=_("div");
 					shule.setAttribute("class", "shule");
-					
+
 					var shule_spacer=_("div");
 					shule_spacer.setAttribute("class", "spacer");
-					
+
 					var shule_cover=_("div");
 					shule_cover.setAttribute("class", "shule_cover");
 					var img=_("img");
@@ -534,10 +534,10 @@ function catShule(cat){
 					shule_cover_link.href="shule.php?id="+data[c].id+"";
 					shule_cover_link.appendChild(shule_cover);
 					shule.appendChild(shule_cover_link);
-					
+
 					var shule_details=_("div");
 					shule_details.setAttribute("class", "shule_details");
-					
+
 					var shule_title=_("div");
 					shule_title.setAttribute("class", "shule_title");
 					shule_title.innerHTML=data[c].title;
@@ -545,38 +545,38 @@ function catShule(cat){
 					shule_link.href="shule.php?id="+data[c].id+"";
 					shule_link.appendChild(shule_title);
 					shule_details.appendChild(shule_link);
-					
+
 					var shule_pub_det=_("div");
 					shule_pub_det.setAttribute("class", "shule_pub_det");
-					
+
 					var shule_author=_("div");
 					shule_author.setAttribute("class", "shule_author");
 					shule_author.innerHTML="By "+data[c].author;
-					
+
 					var shule_published=_("div");
 					shule_published.setAttribute("class", "shule_published");
 					shule_published.innerHTML=data[c].published;
-					
+
 					var shule_category=_("div");
 					shule_category.setAttribute("class", "shule_category");
 					shule_category.innerHTML=data[c].category;
 					var shule_category_link=_("a");
 					shule_category_link.href="./?cat="+data[c].category+"";
 					shule_category_link.appendChild(shule_category);
-					
+
 					shule_pub_det.appendChild(shule_author);
 					shule_pub_det.appendChild(shule_published);
 					shule_pub_det.appendChild(shule_category_link);
 					shule_details.appendChild(shule_pub_det);
-					
+
 					var shule_body=_("div");
 					shule_body.setAttribute("class", "shule_body");
 					shule_body.innerHTML=data[c].intro;
 					shule_details.appendChild(shule_body);
-					
+
 					shule.appendChild(shule_details);
 					shule.appendChild(shule_spacer);
-					
+
 					switch(j){
 						case 0:
 						$("shule_left_left_container").appendChild(shule);
@@ -585,7 +585,7 @@ function catShule(cat){
 						$("shule_left_right_container").appendChild(shule);
 						break;
 					}
-					
+
 					c++;
 					if(c==(data.length)){
 						break;
@@ -665,18 +665,18 @@ function fetchAd(){
 			while(i<data.length){
 				var in_ad_spacer=_("div");
 				in_ad_spacer.setAttribute("class", "spacer");
-				
+
 				switch(data[i].type){
-					
+
 					case '0':
 						var ultimate_ad=_("div");
 						ultimate_ad.setAttribute("class", "ultimate_ad");
-						
+
 						var ultimate_ad_name=_("div");
 						ultimate_ad_name.setAttribute("class", "ultimate_ad_name");
 						ultimate_ad_name.innerHTML=data[i].title;
 						ultimate_ad.appendChild(ultimate_ad_name);
-						
+
 						var ultimate_ad_pic=_("div");
 						ultimate_ad_pic.setAttribute("class", "ultimate_ad_pic");
 						var img=_("img");
@@ -687,43 +687,43 @@ function fetchAd(){
 						ultimate_exlink.target="_NEW";
 						ultimate_exlink.appendChild(ultimate_ad_pic);
 						ultimate_ad.appendChild(ultimate_exlink);
-						
+
 						var ultimate_ad_descr=_("div");
 						ultimate_ad_descr.setAttribute("class", "ultimate_ad_descr");
 						ultimate_ad_descr.innerHTML=data[i].descr;
 						ultimate_ad.appendChild(ultimate_ad_descr);
-						
+
 						$("extra_ad").appendChild(ultimate_ad);
 					break;
-					
+
 					case '1':
 						var thumb_ad=_("div");
 						thumb_ad.setAttribute("class", "thumb_ad");
-						
+
 						var thumb_ad_pic=_("div");
 						thumb_ad_pic.setAttribute("class", "thumb_ad_pic");
 						var img=_("img");
 						img.src="img/"+data[i].pic;
 						thumb_ad_pic.appendChild(img);
 						thumb_ad.appendChild(thumb_ad_pic);
-						
+
 						var thumb_ad_details=_("div");
 						thumb_ad_details.setAttribute("class", "thumb_ad_details");
-						
+
 						var thumb_ad_name=_("div");
 						thumb_ad_name.setAttribute("class", "thumb_ad_name");
 						thumb_ad_name.innerHTML=data[i].title;
-						
+
 						var thumb_ad_descr=_("div");
 						thumb_ad_descr.setAttribute("class", "thumb_ad_descr");
 						thumb_ad_descr.innerHTML=data[i].descr;
-						
+
 						thumb_ad_details.appendChild(thumb_ad_name);
 						thumb_ad_details.appendChild(thumb_ad_descr);
-						
+
 						thumb_ad.appendChild(thumb_ad_details);
 						thumb_ad.appendChild(in_ad_spacer);
-						
+
 						$("extra_ad").appendChild(thumb_ad);
 					break;
 				}

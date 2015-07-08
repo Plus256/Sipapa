@@ -1,4 +1,5 @@
 <?php
+require("db.php");
 $uname=mysqli_real_escape_string($_POST['uname']);
 $pwd=mysqli_real_escape_string($_POST['pwd']);
 $hash=hash('sha256', $pwd);

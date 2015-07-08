@@ -1,7 +1,7 @@
 <?php
 /*local credentials*/
 $host="127.0.0.1";
-$db="minzani";
+$db="sipapa";
 $user="root";
 $pwd="";
 $port=3306;

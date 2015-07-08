@@ -6,6 +6,7 @@ if(isset($_GET['news_subscr'])){
 }
 
 function newsSubscr(){
+	require("db.php");//I REALLY DON'T WHY THIS FUNCTION NEEDS THIS LINE!
 	if(!empty($_POST['email'])){
 		$mail_check=spamCheck($_POST['email']);
 		if($mail_check==false){

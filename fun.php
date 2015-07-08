@@ -210,6 +210,7 @@ if(isset($_GET['poll_result'])){
 }
 
 function voteShare($p_cand_share, $poll){
+	require("db.php");//I REALLY DON'T WHY THIS FUNCTION NEEDS THIS LINE!
 	$percent;
 	$total=0;
 	$q=mysqli_query($con, "select votes from p_cand where poll=$poll");
@@ -221,6 +222,7 @@ function voteShare($p_cand_share, $poll){
 }
 
 function totalVotes($poll){
+	require("db.php");//I REALLY DON'T WHY THIS FUNCTION NEEDS THIS LINE!
 	$total=0;
 	$q=mysqli_query($con, "select votes from p_cand where poll=$poll");
 	while($r=mysqli_fetch_assoc($q)){
@@ -241,7 +243,7 @@ if(isset($_GET['send_msg'])){
 				$frm=cleanInput($_POST['frm']);
 				$sbj=cleanInput($_POST['sbj']);
 				$msg=cleanInput($_POST['msg']);
-				
+
 				$q=mysqli_query($con, "select id, email from news_l where email='$frm'");
 			    if(mysqli_num_rows($q)>0){
 			    	//email exists in our news_l subscriptions

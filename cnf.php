@@ -2,7 +2,7 @@
 ob_start();
 session_start();
 $power="Plus256 Network";
-$short_name="Spapa";
+$short_name="Sipapa";
 $tagline="Entertainment";
 $logo="gra/logo.png";
 $menu_icon="gra/menu_icon.png";

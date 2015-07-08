@@ -34,7 +34,7 @@ input[placeholder]{
 }
 
 :-ms-input-placeholder{
-   color:#00F; 
+   color:#00F;
 }
 */
 textarea:focus, input:focus{
@@ -208,7 +208,8 @@ textarea {
 
 #banner{
 	height:3em;
-	background:#FFF;
+	background:#333;
+	color:#FFF
 }
 
 #name_logo{
@@ -251,7 +252,7 @@ textarea {
 #menu_icon{
 	float:right;
 	cursor:pointer;
-	padding:5px;
+	padding:5px 1em;
 }
 
 #menu_icon:hover{
