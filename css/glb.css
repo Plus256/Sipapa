@@ -5,7 +5,7 @@ body{
 
 a{
 	text-decoration:none;
-	color:#F00;
+	color:#090;
 }
 
 a:hover{
@@ -256,7 +256,7 @@ textarea {
 }
 
 #menu_icon:hover{
-	background:#F00;
+	background:#090;
 }
 
 #menu_icon:hover .menu_icon_stripe{
@@ -265,7 +265,7 @@ textarea {
 
 .menu_icon_stripe{
 	padding:5px;
-	background:#F00;
+	background:#090;
 }
 
 .menu_icon_stripe:nth-child(2){
@@ -305,7 +305,7 @@ textarea {
 #menu ul li a{
 	display:block;
 	padding:10px;
-	color:#F00;
+	color:#090;
 	text-decoration:none;
 }
 
@@ -315,7 +315,7 @@ textarea {
 
 #menu ul li a:hover{
 	color:#FFF;
-	background:#F00;
+	background:#090;
 }
 
 #dashboard{
@@ -351,7 +351,7 @@ textarea {
 }
 
 .shule .read_more{
-	color:#F00;
+	color:#090;
 	font-size:80%;
 }
 
@@ -370,7 +370,7 @@ textarea {
 
 .shule_title:hover{
 	background:#EEE;
-	color:#F00;
+	color:#090;
 }
 
 .shule_pub_det{
@@ -387,7 +387,7 @@ textarea {
 }
 
 .shule_body a{
-	color:#F00;
+	color:#090;
 }
 
 .shule_body a:hover{
@@ -582,7 +582,7 @@ textarea {
 }
 
 #news_l input[type="button"]:hover {
-	background:#F00;
+	background:#090;
 	color:#FFF;
 	box-shadow:none;
 	-moz-box-shadow:none;
@@ -612,7 +612,7 @@ textarea {
 }
 
 #extra_info #contr a{
-	background:#F00;
+	background:#090;
 	color:#FFF;
 }
 
@@ -646,7 +646,7 @@ textarea {
 	padding:5px 0;
 	text-decoration:none;
 	background:#F1F1F1;
-	border-bottom:1px solid #F00;
+	border-bottom:1px solid #090;
 	color:#000;
 }
 
@@ -775,7 +775,7 @@ textarea {
 #poll_end{
 	overflow:hidden;
 	font-size:80%;
-	color:#F00;
+	color:#090;
 }
 
 #poll_total{
@@ -889,8 +889,8 @@ textarea {
 	font-size:80%;
 	text-align:center;
 	padding:2em 0;
-	background:rgb(255, 0, 0);
-	background:rgba(255, 0, 0, 0.75);
+	background:rgb(0, 153, 0);
+	background:rgba(0, 153, 0, 0.75);
 	color:#FFF;
 	margin-bottom:10px;
 }
