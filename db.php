@@ -3,7 +3,7 @@
 $host="127.0.0.1";
 $db="sipapa";
 $user="root";
-$pwd="";
+$pwd="root";
 $port=3306;
 $con=mysqli_connect($host, $user, $pwd, $db, $port) or die(mysqli_error());
 /*end of local*/
