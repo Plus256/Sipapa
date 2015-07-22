@@ -7,12 +7,12 @@ require_once("cnf.php");
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="viewport" content="initial-scale=1.0">
-<meta name="description" content="<?php echo $short_name; ?> - <?php echo $tagline; ?>">
+<meta name="description" content="<?php echo $short_name; ?>">
 <meta name="keywords" content="Minzani, Uganda, Reviews">
-<meta property="og:url" content="http://<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>" /> 
+<meta property="og:url" content="http://<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>" />
 <meta property="og:title" content="<?php echo $og_title; ?>" />
-<meta property="og:description" content="<?php echo $og_descr; ?>" /> 
-<meta property="og:image" content="<?php echo $og_cover; ?>" /> 
+<meta property="og:description" content="<?php echo $og_descr; ?>" />
+<meta property="og:image" content="<?php echo $og_cover; ?>" />
 <link rel="shortcut icon" type="image/x-icon" href="gra/fav.ico" />
 <link rel="stylesheet" type="text/css" href="css/glb.css" />
 <link rel="stylesheet" type="text/css" href="css/mob.css" />
@@ -24,7 +24,7 @@ require_once("cnf.php");
 <!--[if !IE]><!-->
 <link rel="stylesheet" type="text/css" href="css/nie.css" />
 <!--<![endif]-->
-<title><?php echo $short_name; ?> - <?php echo $tagline; ?></title>
+<title><?php echo $short_name; ?></title>
 <script type="text/javascript" src="js/init.js"></script>
 <script type="text/javascript" src="js/fun.js"></script>
 <script type="text/javascript" src="js/wysiwyg.js"></script>
